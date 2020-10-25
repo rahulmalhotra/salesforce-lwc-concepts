@@ -1,0 +1,15 @@
+<template>
+    <div style="width: 640px;">
+        <lightning-card title="Animal">
+            <p class="slds-p-around_medium">
+                <lightning-input label="Enter New Age" value={newAge} onchange={updateAge}></lightning-input>
+                <br />
+                Animal Name:- {name}
+                <br />
+                Animal Age:- {age} years
+                <br />
+            </p>
+            <lightning-button label="Update Age" onclick={updateOriginalAge} slot="actions"></lightning-button>
+        </lightning-card>
+    </div>
+</template>
