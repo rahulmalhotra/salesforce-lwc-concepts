@@ -6,7 +6,7 @@ export default class Person extends LightningElement {
     location;
 
     /*
-    *   @track - Whenever you want to make a propery of a data member reactive
+    *   @track - Whenever you want to make a property of a data member reactive
     *   @api - Whenever you want to make a data member or member function public
     *
     *   Note:-
