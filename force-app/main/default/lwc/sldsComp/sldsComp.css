@@ -1,0 +1,12 @@
+.my-button {
+    --sds-c-button-destructive-color-background: purple;
+    --sds-c-button-destructive-color-border: purple;
+    --sds-c-button-destructive-color-background-hover: #4B0082;
+}
+.my-badge {
+    --sds-c-badge-color-background: purple;
+    --sds-c-badge-text-color: white;
+}
+.my-progress-bar {
+    background: red;
+}

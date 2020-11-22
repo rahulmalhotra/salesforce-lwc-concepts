@@ -1,0 +1,28 @@
+<template>
+    <div style="width:640px;">
+        <lightning-card title="SLDS Component">
+            <p class="slds-p-around_medium">
+                <lightning-button label="My Button" class="slds-p-around_large" title="My Button Title"></lightning-button>
+                <br /><br />
+                <lightning-button label="My Button" variant="brand" title="My Button Title"></lightning-button>
+                <br /><br />
+                <lightning-button label="My Button" variant="destructive" title="My Button Title"></lightning-button>
+                <br /><br />
+                <lightning-button class="my-button" label="My Button in Purple Color" variant="destructive" title="My Button Title"></lightning-button>
+                <br /><br />
+                <lightning-badge class="slds-theme_success" label="My Badge"></lightning-badge>
+                <br /><br />
+                <lightning-badge class="slds-theme_error" label="My Badge"></lightning-badge>
+                <br /><br />
+                <lightning-badge class="my-badge" label="My Badge in Purple Color"></lightning-badge>
+                <br /><br />
+                <lightning-progress-bar value="50" size="large"></lightning-progress-bar>
+            </p>
+        </lightning-card>
+        <div class="slds-progress-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+            <span class="slds-progress-bar__value my-progress-bar" style="width:25%">
+            <span class="slds-assistive-text">Progress: 25%</span>
+            </span>
+            </div>
+        </div>
+</template>
