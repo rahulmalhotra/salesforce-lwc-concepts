@@ -1,0 +1,9 @@
+@import 'c/cssLibrary';
+:host {
+    background: blue;
+    color: white;
+}
+:host(.active1) {
+    background: green;
+    color: white;
+}
