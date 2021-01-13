@@ -1,0 +1,20 @@
+<template>
+  <lightning-card title="Contact Form">
+    <div class="slds-p-horizontal_small">
+      <lightning-record-form
+        object-api-name={objectName}
+        record-id="0039D00000AVAlDQAX"
+        layout-type="Compact"
+        fields={objectFields}
+        columns="2"
+        density="comfy"
+        onload={handleLoad}
+        oncancel={handleCancel}
+        onsubmit={handleSubmit}
+        onsuccess={handleSuccess}
+        onerror={handleError}
+      >
+      </lightning-record-form>
+    </div>
+  </lightning-card>
+</template>
