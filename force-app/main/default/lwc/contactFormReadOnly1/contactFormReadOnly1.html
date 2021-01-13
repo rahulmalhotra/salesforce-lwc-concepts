@@ -1,0 +1,17 @@
+<template>
+  <lightning-card title="Contact Form Read Only 1">
+    <div class="slds-p-horizontal_small">
+      <lightning-layout multiple-rows>
+        <template for:each={contactFields} for:item="contactField">
+          <lightning-layout-item size="12" key={contactField.key}>
+            <lightning-input
+              label={contactField.label}
+              value={contactField.value}
+              read-only
+            ></lightning-input>
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>
