@@ -1,0 +1,34 @@
+<template>
+  <lightning-card title="Contact Form Edit Only 1">
+    <div class="slds-p-horizontal_small">
+      <lightning-layout multiple-rows>
+        <template for:each={contactFields} for:item="contactField">
+          <lightning-layout-item size="12" key={contactField.key}>
+            <lightning-input
+              label={contactField.label}
+              value={contactField.value}
+              name={contactField.apiName}
+              onchange={updateContactField}
+            ></lightning-input>
+          </lightning-layout-item>
+        </template>
+        <lightning-layout-item
+          size="12"
+          class="slds-align_absolute-center slds-p-top_small"
+        >
+          <lightning-button
+            label="Cancel"
+            class="slds-m-right_small"
+            onclick={resetForm}
+          ></lightning-button>
+          <lightning-button
+            type="submit"
+            variant="brand"
+            label="Save"
+            onclick={saveRecord}
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+    </div>
+  </lightning-card>
+</template>
