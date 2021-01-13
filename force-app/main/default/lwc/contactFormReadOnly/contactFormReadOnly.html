@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Contact Form Read Only">
+    <div class="slds-p-horizontal_small">
+      <lightning-record-view-form
+        record-id={recordId}
+        density="comfy"
+        object-api-name={objectName}
+        onload={handleLoad}
+      >
+        <lightning-output-field field-name="FirstName"></lightning-output-field>
+        <lightning-output-field
+          field-name="MobilePhone"
+        ></lightning-output-field>
+        <lightning-output-field field-name="Code__c"></lightning-output-field>
+        <lightning-output-field field-name="LastName"></lightning-output-field>
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        <lightning-output-field field-name="Email"></lightning-output-field>
+      </lightning-record-view-form>
+    </div>
+    <lightning-button
+      onclick={updateRecordId}
+      label="Update"
+      class="slds-m-around_small"
+    ></lightning-button>
+  </lightning-card>
+</template>
