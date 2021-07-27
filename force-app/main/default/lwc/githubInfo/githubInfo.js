@@ -55,3 +55,14 @@ export default class GithubInfo extends LightningElement {
     }
 
 }
+
+/*
+    * Fetch Syntax
+    fetch('<request-url>', {
+        method: '<method-name>', // * Like: GET, POST
+        headers: {
+            'Content-Type': '<content-type-passed-in-body>' // * Like: application/json, application/x-www-form-urlencoded
+        },
+        body: JSON.stringify(data) // * Please note that body data type must match "Content-Type" header
+    });
+*/
