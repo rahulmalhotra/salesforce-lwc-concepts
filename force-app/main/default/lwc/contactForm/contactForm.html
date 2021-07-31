@@ -1,21 +1,21 @@
 <template>
-    <lightning-card title="Sign Up">
-        <p class="slds-p-around_small">
+    <lightning-card title="New Contact">
+        <p class="slds-var-p-around_small">
             <lightning-layout multiple-rows>
                 <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6">
                     <lightning-input name="firstName" class="validate" type="text" label="First Name" required></lightning-input>
                     <lightning-input name="password" class="validate" type="password" label="Password" required></lightning-input>
-                    <lightning-input name="email" class="validate" type="email" label="Email" pattern="[a-z0-9._-]+@[a-z0-9-]+.[a-z]{2,}$" message-when-pattern-mismatch="Please enter a valid email" required></lightning-input>
+                    <lightning-input name="email" class="validate" type="email" label="Email" pattern="[A-Za-z0-9._-]+@[a-z0-9-]+\.[a-z]{2,}$" message-when-pattern-mismatch="Please enter a valid email" required></lightning-input>
                     <lightning-combobox name="country" class="validate" label="Country" options={countryOptions} required></lightning-combobox>
                 </lightning-layout-item>
                 <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6">
                     <lightning-input name="lastName" class="validate" type="text" label="Last Name" required></lightning-input>
                     <lightning-input name="company" class="validate" type="text" label="Company" required></lightning-input>
-                    <lightning-input name="phone" class="validate" type="tel" label="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" message-when-pattern-mismatch="Please enter a valid phone number" required></lightning-input>
+                    <lightning-input name="phone" class="validate" type="tel" label="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}$" message-when-pattern-mismatch="Please enter a valid phone number" required></lightning-input>
                     <lightning-input name="pincode" class="validate" type="number" label="Pin Code" min="0000" max="999999" message-when-range-overflow="Please add a correct pincode" message-when-range-underflow="Please add a correct pincode"></lightning-input>
                 </lightning-layout-item>
-                <lightning-layout-item size="12" class="slds-p-top_small">
-                    <lightning-button class="slds-align_absolute-center" label="Create Account" onclick={createAccount}></lightning-button>    
+                <lightning-layout-item size="12" class="slds-var-p-top_small">
+                    <lightning-button class="slds-align_absolute-center" label="Sign Up" onclick={createContact}></lightning-button>    
                 </lightning-layout-item>
             </lightning-layout>
         </p>
