@@ -37,6 +37,7 @@ export default class GithubInfo extends LightningElement {
                 }
             })
             .then(githubUser => {
+                console.log(githubUser);
                 this.user = {
                     id: githubUser.id,
                     name: githubUser.name,
